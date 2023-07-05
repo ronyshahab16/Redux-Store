@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.dashboardContainer{
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    top: 0%;
+    right: 3%;
+   /* left: -20px; */
+    background-color: rgb(243, 240, 240);
+    border-radius: 5%;
+    padding: 2em;
+    border: 2px solid rgb(168, 167, 167);
+   transform: scale(0);
+    /* transform: scale(0.1); */
+    transition: all 0.5s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active + .dashboardContainer{
+    top: 80%;
+    
+transform: scale(1);
+    transition: all 0.4s
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardContainer{
+border: 2px solid rgb(202, 202, 202);
+display: flex;
+width: fit-content;
+flex-direction: column;
+padding: 1em;
+}
+.cardContainer img{
+    height: 250px;
+    width: 250px;
+}
+.feedContainer{
+    
+}
+.cardItemContainer{
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.itemInfoContainer p{
+    display: inline-block;
+}
+.itemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.onlyItemInfoContainer{
+    display: flex;
+    padding: 2em 0;
+    justify-content: space-around;
+    width: 75vw;
+
+    
+}
+.itemImgContainer img{
+    height: 250px;
+    width: 250px;
+
+}
+.ratingContainer{
+    background-color: green;
+    padding: 1em;
+    color: white;
+
+}
+.dishCounter{
+   
+    background-color: rgb(173, 171, 171);
+    padding: 0.5em;
+    display: inline-block;
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dishCounterCenter{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92vw;
 }
-
-.App-link {
-  color: #61dafb;
+.cardInfoButtonContainer{
+  margin: 2em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartWrapper{
+    display: flex;
+    gap: 1em;
+    align-items: center;
 }
